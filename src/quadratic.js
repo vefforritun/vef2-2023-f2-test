@@ -20,7 +20,7 @@ export function quadratic (a, b, c) {
   const j = (-b - Math.sqrt(d)) / (2 * a);
 
   const ii = i === -0 ? 0 : i;
-  const jj = j === -0 ? 0 : i;
+  const jj = j === -0 ? 0 : j; // oops
 
   if (ii == jj) {
     return [ii]
